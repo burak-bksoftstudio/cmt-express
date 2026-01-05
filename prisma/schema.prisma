@@ -1,0 +1,356 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id                 String              @id @default(cuid())
+  email              String              @unique
+  passwordHash       String?
+  firstName          String
+  lastName           String
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  isAdmin            Boolean             @default(false)
+  clerkId            String?             @unique
+  memberships        ConferenceMember[]
+  conferenceRequests ConferenceRequest[]
+  papers             PaperAuthor[]
+  reviewAssignments  ReviewAssignment[]  @relation("UserReviewAssignments")
+  reviewerBids       ReviewerBid[]       @relation("ReviewerBids")
+  conflicts          ReviewerConflict[]
+  sentInvitations    Invitation[]        @relation("SentInvitations")
+  decisionsMade      Decision[]          @relation("DecisionsMade")
+  metareviews        Metareview[]        @relation("UserMetareviews")
+  discussionMessages DiscussionMessage[] @relation("UserDiscussionMessages")
+}
+
+model Conference {
+  id          String              @id @default(cuid())
+  name        String
+  description String?
+  location    String?
+  startDate   DateTime
+  endDate     DateTime
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+  isPublic    Boolean             @default(true)
+  status      String              @default("active")
+  members     ConferenceMember[]
+  settings    ConferenceSettings?
+  papers      Paper[]
+  tracks      Track[]
+  invitations Invitation[]
+}
+
+model Track {
+  id           String     @id @default(cuid())
+  name         String
+  description  String?
+  conferenceId String
+  createdAt    DateTime   @default(now())
+  papers       Paper[]
+  conference   Conference @relation(fields: [conferenceId], references: [id])
+}
+
+model ConferenceMember {
+  id           String     @id @default(cuid())
+  conferenceId String
+  userId       String
+  role         MemberRole @default(AUTHOR)
+  createdAt    DateTime   @default(now())
+  conference   Conference @relation(fields: [conferenceId], references: [id])
+  user         User       @relation(fields: [userId], references: [id])
+
+  @@unique([conferenceId, userId, role])
+}
+
+model Paper {
+  id                String             @id @default(cuid())
+  conferenceId      String
+  title             String
+  abstract          String?
+  status            String             @default("submitted")
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  trackId           String?
+  cameraReadyFiles  CameraReadyFile[]
+  decision          Decision?
+  conference        Conference         @relation(fields: [conferenceId], references: [id])
+  track             Track?             @relation(fields: [trackId], references: [id])
+  authors           PaperAuthor[]
+  files             PaperFile[]
+  keywords          PaperKeyword[]
+  reviewAssignments ReviewAssignment[] @relation("PaperReviewAssignments")
+  reviewerBids      ReviewerBid[]
+  conflicts         ReviewerConflict[]
+  metareview        Metareview?        @relation("PaperMetareview")
+  discussion        Discussion?        @relation("PaperDiscussion")
+  versions          PaperVersion[]     @relation("PaperVersions")
+}
+
+model PaperAuthor {
+  id      String @id @default(cuid())
+  paperId String
+  userId  String
+  order   Int
+  paper   Paper  @relation(fields: [paperId], references: [id])
+  user    User   @relation(fields: [userId], references: [id])
+
+  @@unique([paperId, userId])
+}
+
+model PaperFile {
+  id        String   @id @default(cuid())
+  paperId   String
+  fileUrl   String
+  createdAt DateTime @default(now())
+  fileKey   String
+  fileName  String
+  mimeType  String
+  paper     Paper    @relation(fields: [paperId], references: [id])
+}
+
+model Keyword {
+  id     String         @id @default(cuid())
+  name   String         @unique
+  papers PaperKeyword[]
+}
+
+model PaperKeyword {
+  id        String  @id @default(cuid())
+  paperId   String
+  keywordId String
+  keyword   Keyword @relation(fields: [keywordId], references: [id])
+  paper     Paper   @relation(fields: [paperId], references: [id])
+
+  @@unique([paperId, keywordId])
+}
+
+model ReviewAssignment {
+  id         String       @id @default(cuid())
+  paperId    String
+  reviewerId String
+  status     ReviewStatus @default(NOT_STARTED)
+  dueDate    DateTime?
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+  review     Review?
+  paper      Paper        @relation("PaperReviewAssignments", fields: [paperId], references: [id])
+  reviewer   User         @relation("UserReviewAssignments", fields: [reviewerId], references: [id])
+
+  @@unique([paperId, reviewerId])
+}
+
+model Review {
+  id               String           @id @default(cuid())
+  assignmentId     String           @unique
+  score            Int?
+  submittedAt      DateTime?
+  confidence       Int?
+  commentsToAuthor String?
+  commentsToChair  String?
+  strengths        String?
+  summary          String?
+  weaknesses       String?
+  assignment       ReviewAssignment @relation(fields: [assignmentId], references: [id])
+}
+
+model Decision {
+  id                String   @id @default(cuid())
+  paperId           String   @unique
+  decision          String
+  comment           String?
+  decidedAt         DateTime @default(now())
+  averageConfidence Float?
+  averageScore      Float?
+  finalDecision     String?
+  reviewCount       Int?
+  decidedById       String?
+  paper             Paper    @relation(fields: [paperId], references: [id])
+  decidedBy         User?    @relation("DecisionsMade", fields: [decidedById], references: [id])
+}
+
+model ConferenceSettings {
+  id                    String     @id @default(cuid())
+  conferenceId          String     @unique
+  submissionDeadline    DateTime?
+  reviewDeadline        DateTime?
+  assignmentTimeoutDays Int        @default(3)
+  maxReviewersPerPaper  Int        @default(3)
+  conference            Conference @relation(fields: [conferenceId], references: [id])
+}
+
+model ConferenceRequest {
+  id           String    @id @default(cuid())
+  requesterId  String
+  title        String
+  description  String?
+  startDate    DateTime?
+  endDate      DateTime?
+  status       String    @default("pending")
+  adminComment String?
+  createdAt    DateTime  @default(now())
+  requester    User      @relation(fields: [requesterId], references: [id])
+}
+
+model CameraReadyFile {
+  id              String    @id @default(cuid())
+  paperId         String
+  fileName        String
+  mimeType        String
+  fileKey         String    @unique
+  fileUrl         String
+  uploadedAt      DateTime  @default(now())
+  decidedAt       DateTime?
+  reviewerComment String?
+  status          String    @default("submitted")
+  paper           Paper     @relation(fields: [paperId], references: [id])
+}
+
+model ReviewerConflict {
+  id        String   @id @default(cuid())
+  paperId   String
+  userId    String
+  createdAt DateTime @default(now())
+  paper     Paper    @relation(fields: [paperId], references: [id])
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@unique([paperId, userId])
+}
+
+model ReviewerBid {
+  id         String   @id @default(cuid())
+  paperId    String
+  reviewerId String
+  bid        BidValue
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  paper      Paper    @relation(fields: [paperId], references: [id])
+  reviewer   User     @relation("ReviewerBids", fields: [reviewerId], references: [id])
+
+  @@unique([paperId, reviewerId])
+}
+
+model Invitation {
+  id           String           @id @default(cuid())
+  conferenceId String
+  inviterId    String
+  inviteeEmail String
+  role         MemberRole
+  status       InvitationStatus @default(PENDING)
+  message      String?
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+  respondedAt  DateTime?
+  conference   Conference       @relation(fields: [conferenceId], references: [id])
+  inviter      User             @relation("SentInvitations", fields: [inviterId], references: [id])
+
+  @@unique([conferenceId, inviteeEmail, role])
+}
+
+model Metareview {
+  id              String    @id @default(cuid())
+  paperId         String    @unique
+  metaReviewerId  String
+  
+  // Content
+  summary         String    @db.Text
+  strengths       String    @db.Text
+  weaknesses      String    @db.Text
+  recommendation  String    // ACCEPT, REJECT, BORDERLINE
+  confidence      Int       // 1-5
+  
+  // Review analysis
+  reviewConsensus Boolean   @default(true)
+  disagreementNote String?  @db.Text
+  
+  // Metadata
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  submittedAt     DateTime?
+  
+  paper           Paper     @relation("PaperMetareview", fields: [paperId], references: [id], onDelete: Cascade)
+  metaReviewer    User      @relation("UserMetareviews", fields: [metaReviewerId], references: [id])
+}
+
+model Discussion {
+  id          String              @id @default(cuid())
+  paperId     String              @unique
+  status      String              @default("open") // open, closed
+  closedAt    DateTime?
+  closedById  String?
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+  
+  paper       Paper               @relation("PaperDiscussion", fields: [paperId], references: [id], onDelete: Cascade)
+  messages    DiscussionMessage[]
+}
+
+model DiscussionMessage {
+  id           String     @id @default(cuid())
+  discussionId String
+  userId       String
+  message      String     @db.Text
+  isInternal   Boolean    @default(true)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  
+  discussion   Discussion @relation(fields: [discussionId], references: [id], onDelete: Cascade)
+  user         User       @relation("UserDiscussionMessages", fields: [userId], references: [id])
+}
+
+enum MemberRole {
+  CHAIR
+  REVIEWER
+  AUTHOR
+  META_REVIEWER
+}
+
+enum ReviewStatus {
+  NOT_STARTED
+  DRAFT
+  SUBMITTED
+}
+
+enum BidValue {
+  YES
+  MAYBE
+  NO
+  CONFLICT
+}
+
+enum InvitationStatus {
+  PENDING
+  ACCEPTED
+  DECLINED
+  EXPIRED
+}
+
+model PaperVersion {
+  id          String   @id @default(cuid())
+  paperId     String
+  version     Int      // 1, 2, 3...
+  versionType String   // SUBMISSION, REVISION, CAMERA_READY
+
+  // Snapshot data
+  title       String
+  abstract    String?
+  fileUrl     String   // S3 URL of the PDF at this version
+  fileKey     String   // S3 key for cleanup
+  fileName    String
+
+  // Metadata
+  createdAt   DateTime @default(now())
+  createdBy   String?  // Who uploaded this version
+  notes       String?  // Optional version notes
+
+  paper       Paper    @relation("PaperVersions", fields: [paperId], references: [id], onDelete: Cascade)
+
+  @@unique([paperId, version])
+  @@index([paperId])
+}

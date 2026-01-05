@@ -1,0 +1,1036 @@
+{
+  "common": {
+    "brand": "CMT",
+    "brandFull": "Conference Management Tool",
+    "actions": {
+      "signIn": "Sign In",
+      "getStarted": "Get Started",
+      "refresh": "Refresh",
+      "view": "View",
+      "close": "Close",
+      "save": "Save",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "continue": "Continue",
+      "back": "Back",
+      "editSettings": "Edit Settings"
+    },
+    "status": {
+      "loading": "Loading...",
+      "online": "Online"
+    },
+    "roles": {
+      "admin": "Admin",
+      "chair": "Chair",
+      "reviewer": "Reviewer",
+      "author": "Author"
+    },
+    "errors": {
+      "error": "Error"
+    }
+  },
+  "localeSwitcher": {
+    "label": "Language"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Enter your credentials to access your account",
+      "fields": {
+        "email": "Email",
+        "password": "Password"
+      },
+      "placeholders": {
+        "email": "name@example.com",
+        "password": "Enter your password"
+      },
+      "signIn": "Sign In",
+      "signingIn": "Signing in...",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "success": "Success",
+      "error": "Error",
+      "registrationSuccess": "Account created successfully! Please sign in.",
+      "errors": {
+        "loginFailed": "Login failed"
+      }
+    },
+    "register": {
+      "title": "Create an account",
+      "subtitle": "Enter your details to get started",
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password"
+      },
+      "placeholders": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "name@example.com",
+        "password": "Create a password",
+        "confirmPassword": "Confirm your password"
+      },
+      "createAccount": "Create Account",
+      "creating": "Creating account...",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "error": "Error",
+      "errors": {
+        "nameRequired": "First name and last name are required",
+        "invalidEmail": "Please enter a valid email address",
+        "passwordMismatch": "Passwords do not match",
+        "passwordLength": "Password must be at least 6 characters",
+        "registrationFailed": "Registration failed"
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account preferences",
+    "profile": {
+      "title": "Profile Information",
+      "description": "Update your personal information",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter last name",
+      "email": "Email",
+      "emailPlaceholder": "Enter email",
+      "save": "Save Changes"
+    },
+    "password": {
+      "title": "Change Password",
+      "description": "Update your password",
+      "current": "Current Password",
+      "currentPlaceholder": "Enter current password",
+      "new": "New Password",
+      "newPlaceholder": "Enter new password",
+      "confirm": "Confirm New Password",
+      "confirmPlaceholder": "Confirm new password",
+      "update": "Update Password"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Configure how you receive notifications",
+      "enabled": "Enabled",
+      "email": {
+        "label": "Email Notifications",
+        "description": "Receive email updates about your papers and reviews"
+      },
+      "reviewReminders": {
+        "label": "Review Reminders",
+        "description": "Get reminded about upcoming review deadlines"
+      },
+      "decisions": {
+        "label": "Decision Notifications",
+        "description": "Be notified when decisions are made on your papers"
+      }
+    },
+    "appearance": {
+      "title": "Appearance",
+      "description": "Customize the look and feel",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "account": {
+      "title": "Account",
+      "description": "Your account information",
+      "id": "Account ID",
+      "memberSince": "Member Since",
+      "type": "Account Type",
+      "administrator": "Administrator",
+      "standardUser": "Standard User"
+    },
+    "danger": {
+      "title": "Danger Zone",
+      "description": "Irreversible actions",
+      "deleteAccount": "Delete Account"
+    }
+  },
+  "landing": {
+    "badge": "Streamlined Conference Management",
+    "heroTitleLine1": "Modern Conference",
+    "heroTitleLine2": "Management System",
+    "heroSubtitle": "A powerful platform for managing academic conferences, paper submissions, peer reviews, and publication workflows — all in one place.",
+    "heroPrimary": "Start Your Conference",
+    "heroSecondary": "Sign In to Dashboard",
+    "featuresTitle": "Everything You Need to Run a Successful Conference",
+    "features": {
+      "submissionTitle": "Paper Submission",
+      "submissionDesc": "Easy submission system with support for multiple file formats and co-authors.",
+      "assignmentTitle": "Reviewer Assignment",
+      "assignmentDesc": "Smart assignment with bidding system and conflict detection.",
+      "reviewsTitle": "Review Management",
+      "reviewsDesc": "Comprehensive review forms with scoring and recommendations.",
+      "deadlinesTitle": "Deadline Tracking",
+      "deadlinesDesc": "Automatic deadline enforcement with notifications."
+    },
+    "benefitsTitle": "Why Choose Our Platform?",
+    "benefits": [
+      "Role-based access for Chairs, Reviewers, and Authors",
+      "Real-time dashboard with statistics and charts",
+      "Automated reviewer-paper matching",
+      "Camera-ready submission workflow",
+      "Dark mode support for comfortable viewing",
+      "Mobile-responsive design"
+    ],
+    "ctaTitle": "Ready to Get Started?",
+    "ctaSubtitle": "Join thousands of conference organizers who trust our platform.",
+    "ctaButton": "Create Your Account",
+    "footer": "© 2024 Conference Management Tool. All rights reserved."
+  },
+  "topbar": {
+    "title": "Conference Management",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Log out"
+  },
+  "sidebar": {
+    "main": "Main",
+    "admin": "Administration",
+    "items": {
+      "dashboard": "Dashboard",
+      "conferences": "Conferences",
+      "myPapers": "My Papers",
+      "assignments": "Assignments",
+      "bidding": "Bidding",
+      "cameraReady": "Camera Ready",
+      "adminPanel": "Admin Panel",
+      "allPapers": "All Papers",
+      "users": "Users",
+      "settings": "Settings"
+    }
+  },
+  "layout": {
+    "theme": {
+      "toggle": "Toggle theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "conferences": {
+    "list": {
+      "title": "Conferences",
+      "subtitle": "Browse and manage academic conferences",
+      "create": "Create Conference",
+      "errors": {
+        "load": "Failed to load conferences"
+      },
+      "status": {
+        "upcoming": "Upcoming",
+        "active": "Active",
+        "completed": "Completed"
+      },
+      "sections": {
+        "active": "Active Conferences",
+        "upcoming": "Upcoming Conferences",
+        "completed": "Past Conferences"
+      },
+      "empty": {
+        "title": "No conferences yet",
+        "admin": "Create your first conference to start paper submissions and reviews.",
+        "user": "No conferences are available right now. Check back later."
+      },
+      "stats": {
+        "total": "Total Conferences"
+      }
+    },
+    "create": {
+      "title": "Create Conference",
+      "subtitle": "Set up a new conference for paper submissions and reviews",
+      "error": "Error",
+      "details": {
+        "title": "Conference Details",
+        "description": "Enter the basic information for your conference"
+      },
+      "fields": {
+        "name": "Conference Name",
+        "description": "Description",
+        "location": "Location",
+        "startDate": "Start Date",
+        "endDate": "End Date"
+      },
+      "placeholders": {
+        "name": "e.g., ICML 2024",
+        "description": "Describe the conference, topics of interest, etc.",
+        "location": "e.g., San Francisco, CA"
+      },
+      "createButton": "Create Conference",
+      "creating": "Creating...",
+      "errors": {
+        "nameRequired": "Conference name is required",
+        "datesRequired": "Start date and end date are required",
+        "endBeforeStart": "End date must be after start date",
+        "createFailed": "Failed to create conference"
+      }
+    },
+    "details": {
+      "back": "Back to Conferences",
+      "noDescription": "No description provided",
+      "errors": {
+        "load": "Failed to load conference",
+        "notFound": "Conference not found"
+      },
+      "status": {
+        "upcoming": "Upcoming",
+        "active": "Active",
+        "completed": "Completed",
+        "unknown": "Unknown"
+      },
+      "sections": {
+        "generalInfo": "General Information",
+        "deadlines": "Deadlines",
+        "deadlinesDesc": "Important dates for submissions and reviews",
+        "configuration": "Configuration",
+        "statistics": "Statistics",
+        "management": "Management Panel",
+        "managementDesc": "Administrative actions",
+        "quickActions": "Quick Actions"
+      },
+      "fields": {
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "location": "Location",
+        "created": "Created",
+        "submissionDeadline": "Submission Deadline",
+        "reviewDeadline": "Review Deadline",
+        "maxReviewersPerPaper": "Max Reviewers Per Paper",
+        "assignmentTimeout": "Assignment Timeout",
+        "assignmentTimeoutValue": "{days} days",
+        "totalPapers": "Total Papers",
+        "members": "Members"
+      },
+      "actions": {
+        "editSettings": "Edit Settings",
+        "manageMembers": "Manage Members",
+        "viewPapers": "View Papers",
+        "viewAssignments": "View Assignments"
+      }
+    },
+    "card": {
+      "status": {
+        "upcoming": "Upcoming",
+        "active": "Active",
+        "completed": "Completed"
+      },
+      "roles": {
+        "admin": "Admin",
+        "chair": "Chair",
+        "reviewer": "Reviewer",
+        "author": "Author"
+      },
+      "noDescription": "No description provided",
+      "submissionDeadline": "Submission Deadline",
+      "reviewDeadline": "Review Deadline",
+      "papersCount": "{count} {count, plural, one {paper} other {papers}}",
+      "viewDetails": "View Details"
+    },
+    "members": {
+      "page": {
+        "notFound": "Conference not found",
+        "back": "Back to conferences",
+        "title": "Members",
+        "actions": {
+          "add": "Add Member"
+        },
+        "countLabel": "Members",
+        "list": {
+          "title": "Conference Members",
+          "manage": "Manage members and their roles in this conference",
+          "view": "View all members of this conference"
+        }
+      },
+      "section": {
+        "title": "Members ({count})",
+        "description": "Conference participants and their roles",
+        "actions": {
+          "add": "Add",
+          "viewAll": "View All",
+          "addFirst": "Add the first member",
+          "viewCount": "View all {count} members →"
+        },
+        "empty": "No members yet"
+      },
+      "actions": {
+        "remove": "Remove Member"
+      },
+      "list": {
+        "filters": {
+          "all": "All",
+          "chairs": "Chairs",
+          "reviewers": "Reviewers",
+          "authors": "Authors"
+        },
+        "searchPlaceholder": "Search members...",
+        "empty": {
+          "title": "No members found",
+          "search": "Try adjusting your search or filter",
+          "default": "No members have been added yet"
+        }
+      },
+      "role": {
+        "chair": "Chair",
+        "reviewer": "Reviewer",
+        "author": "Author"
+      },
+      "badges": {
+        "admin": "Admin"
+      },
+      "addModal": {
+        "title": "Add Member",
+        "description": "Add a user to this conference by their email address.",
+        "email": {
+          "label": "Email Address",
+          "placeholder": "user@example.com"
+        },
+        "role": {
+          "label": "Role",
+          "placeholder": "Select role",
+          "options": {
+            "chair": "Chair",
+            "reviewer": "Reviewer",
+            "author": "Author"
+          },
+          "hints": {
+            "chair": "Can manage members, papers, and reviews",
+            "reviewer": "Can review assigned papers",
+            "author": "Can submit papers"
+          }
+        },
+        "actions": {
+          "cancel": "Cancel",
+          "loading": "Adding...",
+          "submit": "Add Member"
+        }
+      },
+      "remove": {
+        "title": "Remove Member",
+        "description": "Are you sure you want to remove <strong>{name}</strong> from this conference? This action cannot be undone.",
+        "fallbackName": "this member",
+        "actions": {
+          "cancel": "Cancel",
+          "confirm": "Remove",
+          "loading": "Removing..."
+        }
+      },
+      "toast": {
+        "loadError": { "title": "Error", "description": "Failed to load conference data" },
+        "addSuccess": { "title": "Success", "description": "Member added successfully" },
+        "addError": { "title": "Error", "fallback": "Failed to add member" },
+        "roleSuccess": { "title": "Success", "description": "Role updated successfully" },
+        "roleError": { "title": "Error", "fallback": "Failed to update role" },
+        "removeSuccess": { "title": "Success", "description": "Member removed successfully" },
+        "removeError": { "title": "Error", "fallback": "Failed to remove member" }
+      }
+    },
+    "settings": {
+      "generalInfo": {
+        "title": "General Information",
+        "description": "Basic information about your conference",
+        "fields": {
+          "name": { "label": "Conference Name *", "placeholder": "Enter conference name" },
+          "description": { "label": "Description", "placeholder": "Enter conference description" },
+          "location": { "label": "Location", "placeholder": "e.g., San Francisco, CA or Virtual" },
+          "startDate": { "label": "Start Date *" },
+          "endDate": { "label": "End Date *" }
+        }
+      },
+      "deadlines": {
+        "title": "Deadlines",
+        "subtitle": "Set important deadlines for paper submissions and reviews",
+        "status": {
+          "passed": "Passed",
+          "left": "{count}d left"
+        },
+        "fields": {
+          "submission": {
+            "label": "Submission Deadline",
+            "help": "After this deadline, authors will no longer be able to submit new papers"
+          },
+          "review": {
+            "label": "Review Deadline",
+            "help": "Reviewers must submit their reviews by this deadline"
+          }
+        }
+      },
+      "review": {
+        "title": "Review Settings",
+        "subtitle": "Configure review assignment parameters",
+        "fields": {
+          "maxReviewers": {
+            "label": "Max Reviewers Per Paper",
+            "help": "Maximum number of reviewers that can be assigned to a single paper. Recommended: 2-4 reviewers."
+          },
+          "timeout": {
+            "label": "Assignment Timeout (Days)",
+            "help": "Number of days reviewers have to accept or decline an assignment before it expires. After this period, assignments will be automatically expired."
+          }
+        },
+        "summary": {
+          "title": "Current Configuration",
+          "reviewersPerPaper": "Reviewers per paper",
+          "timeout": "Assignment timeout",
+          "timeoutValue": "{days} days"
+        }
+      },
+      "page": {
+        "errors": {
+          "load": "Failed to load conference",
+          "save": "Failed to save settings"
+        },
+        "changes": {
+          "name": "Conference name",
+          "description": "Description",
+          "location": "Location",
+          "startDate": "Start date",
+          "endDate": "End date",
+          "submissionDeadline": "Submission deadline",
+          "reviewDeadline": "Review deadline",
+          "maxReviewers": "Max reviewers per paper",
+          "assignmentTimeout": "Assignment timeout"
+        },
+        "back": "Back to Conferences",
+        "title": "Conference Settings",
+        "fallbackName": "Conference",
+        "viewOnly": "View Only",
+        "viewOnlyTitle": "View Only Mode",
+        "viewOnlyDesc": "You don't have permission to edit these settings. Only conference chairs and administrators can make changes.",
+        "actions": {
+          "dismiss": "Dismiss",
+          "cancel": "Cancel"
+        },
+        "success": {
+          "title": "Success",
+          "message": "Settings saved successfully!"
+        },
+        "saveBar": {
+          "label": "Unsaved changes",
+          "help": "You have unsaved changes. Save to apply them.",
+          "reset": "Reset",
+          "save": "Save Changes",
+          "saving": "Saving..."
+        },
+        "confirm": {
+          "title": "Confirm Changes",
+          "description": "Are you sure you want to save the following changes?",
+          "warning": "Changes to conference settings may affect ongoing submissions and reviews.",
+          "changesTitle": "Changes to be applied:",
+          "save": "Save Changes",
+          "saving": "Saving..."
+        }
+      }
+    }
+  },
+  "papers": {
+    "header": {
+      "myPapers": "My Papers",
+      "allPapers": "All Papers",
+      "subtitle": {
+        "mine": "View and manage your paper submissions",
+        "all": "View and manage all paper submissions"
+      }
+    },
+    "actions": {
+      "refresh": "Refresh",
+      "submit": "Submit Paper"
+    },
+    "errors": {
+      "title": "Error",
+      "load": "Failed to load papers. The papers list endpoint may not be available."
+    },
+    "stats": {
+      "total": "Total Papers",
+      "submitted": "Submitted",
+      "underReview": "Under Review",
+      "accepted": "Accepted",
+      "rejected": "Rejected"
+    },
+    "filters": {
+      "searchPlaceholder": "Search papers by title...",
+      "status": {
+        "placeholder": "Filter by status",
+        "all": "All Status",
+        "submitted": "Submitted",
+        "under_review": "Under Review",
+        "accepted": "Accepted",
+        "rejected": "Rejected",
+        "revision": "Revision"
+      },
+      "keyword": {
+        "placeholder": "Filter by keyword",
+        "all": "All Keywords"
+      },
+      "clear": "Clear"
+    },
+    "empty": {
+      "title": "No papers found",
+      "noFilters": "Adjust your filters to find what you're looking for.",
+      "noPapers": "You haven't submitted any papers yet. Submit your first paper to get started.",
+      "clearFilters": "Clear Filters"
+    },
+    "viewButton": "View",
+    "abstractMissing": "Abstract not provided",
+    "submittedAt": "Submitted: {date}",
+    "keywords": {
+      "more": "+{count} more"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "showing": "Showing {from} to {to} of {total} papers",
+      "summary": "Showing {count} of {total} papers"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {name}!",
+    "selectConference": "Select a conference to view dashboard stats",
+    "viewingConference": "Viewing stats for {name}",
+    "error": "Error",
+    "errorDismiss": "Dismiss",
+    "emptyTitle": "No conferences available",
+    "emptyAdmin": "Create your first conference to get started with the dashboard.",
+    "emptyUser": "You haven't been assigned to any conferences yet. Contact an administrator to be added to a conference.",
+    "createConference": "Create Conference",
+    "quickActions": "Quick Actions",
+    "quickActionsDesc": "Common tasks for conference management",
+    "qaManagePapers": "Manage Papers",
+    "qaManagePapersDesc": "Review and manage submissions",
+    "qaSettings": "Conference Settings",
+    "qaSettingsDesc": "Configure deadlines and reviewers",
+    "qaDecisions": "Make Decisions",
+    "qaDecisionsDesc": "Accept or reject papers",
+    "yourConferences": "Your Conferences",
+    "yourConferencesDesc": "All conferences you have access to",
+    "selected": "Selected",
+    "statusActive": "Active",
+    "stats": {
+      "selectConference": "Select a conference",
+      "papers": {
+        "total": { "title": "Total Papers", "desc": "All submitted papers" },
+        "submitted": { "title": "Submitted", "desc": "Awaiting review" },
+        "accepted": { "title": "Accepted", "desc": "Papers accepted" },
+        "rejected": { "title": "Rejected", "desc": "Papers rejected" },
+        "cameraReady": { "title": "Camera Ready", "desc": "Ready for publication" }
+      },
+      "reviews": {
+        "total": { "title": "Total Reviews", "desc": "Reviews completed" },
+        "averageScore": { "title": "Average Score", "desc": "Out of 10" },
+        "averageConfidence": { "title": "Average Confidence", "desc": "Out of 5" }
+      }
+    },
+    "bidding": {
+      "title": "Your Bidding Summary",
+      "description": "Your bids on papers for review",
+      "badge": "{count} bids",
+      "progress": {
+        "title": "Bidding Progress",
+        "count": "{completed} of {total} papers",
+        "remaining": "{count} remaining"
+      },
+      "labels": {
+        "yes": "Yes",
+        "maybe": "Maybe",
+        "no": "No",
+        "conflict": "Conflict"
+      },
+      "allDone": "All papers have been bid on!",
+      "missing": "{count} papers still need your bid",
+      "continue": "Continue Bidding",
+      "empty": "No bids yet. Start bidding on papers to indicate your review preferences."
+    },
+    "charts": {
+      "papers": {
+        "selectConference": "Select a conference to view paper distribution",
+        "title": "Paper Status Distribution",
+        "subtitle": "Overview of all submitted papers",
+        "empty": "No papers yet",
+        "categories": {
+          "submitted": "Submitted",
+          "accepted": "Accepted",
+          "rejected": "Rejected",
+          "cameraReady": "Camera Ready"
+        },
+        "valueFormatter": "{value} papers"
+      }
+    },
+    "reviewerLoad": {
+      "selectConference": "Select a conference to view reviewer assignments",
+      "title": "Reviewer Assignments",
+      "subtitle": "Review progress by reviewer",
+      "subtitleCount": "Review progress by reviewer ({count} reviewers)",
+      "empty": "No reviewers have been assigned yet",
+      "table": {
+        "reviewer": "Reviewer",
+        "progress": "Progress",
+        "assigned": "Assigned",
+        "completed": "Completed",
+        "status": "Status",
+        "complete": "Complete",
+        "pending": "{count} pending"
+      }
+    },
+    "reviewsChart": {
+      "selectConference": "Select a conference to view reviewer workload",
+      "title": "Reviewer Workload",
+      "subtitle": "Papers assigned per reviewer",
+      "subtitleDetailed": "Papers assigned vs completed per reviewer",
+      "empty": "No reviewers assigned yet",
+      "categories": {
+        "assigned": "Assigned",
+        "completed": "Completed"
+      }
+    },
+    "timeline": {
+      "selectConference": "Select a conference to view activity timeline",
+      "title": "Activity Timeline",
+      "subtitle": "Submissions and reviews over time",
+      "empty": "No activity data available yet",
+      "series": {
+        "submissions": "Submissions",
+        "reviews": "Reviews"
+      }
+    }
+  },
+  "reviews": {
+    "title": "My Reviews",
+    "subtitle": "Papers assigned to you for review",
+    "refresh": "Refresh",
+    "stats": {
+      "notStarted": {
+        "title": "Not Started",
+        "desc": "Awaiting your review"
+      },
+      "inProgress": {
+        "title": "In Progress",
+        "desc": "Draft reviews saved"
+      },
+      "completed": {
+        "title": "Completed",
+        "desc": "Reviews submitted"
+      },
+      "overdue": {
+        "title": "Overdue",
+        "desc": "Past deadline"
+      }
+    },
+    "filters": {
+      "searchPlaceholder": "Search papers...",
+      "status": {
+        "placeholder": "Filter by status",
+        "all": "All Reviews",
+        "notStarted": "Not Started",
+        "draft": "Draft",
+        "submitted": "Submitted"
+      }
+    },
+    "pending": {
+      "title": "Pending Reviews",
+      "description": "Papers waiting for your review"
+    },
+    "completed": {
+      "title": "Completed Reviews",
+      "description": "Reviews you have submitted"
+    },
+    "empty": {
+      "allCaughtUp": "All caught up!",
+      "noPending": "You have no pending reviews",
+      "noCompleted": "No completed reviews yet"
+    },
+    "status": {
+      "notStarted": "Not Started",
+      "draft": "Draft",
+      "submitted": "Submitted"
+    },
+    "actions": {
+      "continue": "Continue",
+      "review": "Review",
+      "view": "View"
+    },
+    "deadline": {
+      "overdue": "Overdue:",
+      "due": "Due:"
+    },
+    "form": {
+      "title": "Review Form",
+      "back": "Back to Reviews",
+      "notFound": "Review not found",
+      "notFoundDesc": "This review may have been removed or you don't have access.",
+      "submitted": "Submitted",
+      "overdue": "Overdue",
+      "lastSaved": "Last saved:",
+      "submittedNotice": "This review has been submitted and cannot be edited.",
+      "submittedOn": "Submitted on {date}",
+      "evaluation": "Evaluation",
+      "summary": "Summary",
+      "summaryLabel": "Summary of the Paper",
+      "summaryPlaceholder": "Provide a brief summary of the paper's main contributions and findings...",
+      "summaryHelp": "Summarize the paper's key points in 2-3 paragraphs",
+      "strengths": "Strengths",
+      "strengthsLabel": "Paper Strengths",
+      "strengthsPlaceholder": "List the paper's main strengths...",
+      "strengthsHelp": "What are the strong points of this paper?",
+      "weaknesses": "Weaknesses",
+      "weaknessesLabel": "Paper Weaknesses",
+      "weaknessesPlaceholder": "List the paper's main weaknesses...",
+      "weaknessesHelp": "What are the weak points or areas for improvement?",
+      "commentsToAuthor": "Comments for Authors",
+      "commentsToAuthorLabel": "Comments to Authors",
+      "commentsToAuthorPlaceholder": "Provide constructive feedback for the authors...",
+      "commentsToAuthorHelp": "These comments will be visible to the paper authors",
+      "confidentialComments": "Confidential Comments",
+      "confidentialLabel": "Comments to Program Chair",
+      "confidentialPlaceholder": "Any confidential remarks for the program chair...",
+      "confidentialHelp": "These comments are only visible to the program chair, not to authors",
+      "unsavedChanges": "Unsaved changes",
+      "saving": "Saving...",
+      "saveDraft": "Save Draft",
+      "submitReview": "Submit Review",
+      "errors": {
+        "missingScore": "Please select an overall score.",
+        "missingConfidence": "Please select your confidence level.",
+        "missingSummary": "Please provide a summary of your review."
+      },
+      "toast": {
+        "draftSaved": "Draft saved",
+        "draftSavedDesc": "Your review draft has been saved.",
+        "saveFailed": "Failed to save",
+        "saveFailedDesc": "Could not save your draft. Please try again.",
+        "submitted": "Review submitted",
+        "submittedDesc": "Your review has been submitted successfully.",
+        "submitFailed": "Submission failed",
+        "submitFailedDesc": "Could not submit your review. Please try again.",
+        "loadFailed": "Failed to load review",
+        "loadFailedDesc": "Please try again later."
+      }
+    }
+  },
+  "bidding": {
+    "title": "Paper Bidding",
+    "subtitle": "Express your interest in reviewing papers",
+    "stats": {
+      "total": "Total Papers",
+      "bidded": "Bidded",
+      "highInterest": "High Interest",
+      "medium": "Medium",
+      "lowInterest": "Low Interest"
+    },
+    "filters": {
+      "searchPlaceholder": "Search papers by title or abstract..."
+    },
+    "levels": {
+      "high": "High Interest",
+      "medium": "Medium",
+      "low": "Low Interest",
+      "noBid": "No Bid"
+    },
+    "empty": {
+      "title": "No papers found",
+      "adjustSearch": "Try adjusting your search query",
+      "noPapers": "No papers available for bidding"
+    },
+    "matrix": {
+      "title": "Reviewer Bidding Matrix",
+      "subtitle": "Overview of all reviewer bids on papers",
+      "refresh": "Refresh",
+      "stats": {
+        "totalPapers": "Total Papers",
+        "totalReviewers": "Total Reviewers",
+        "papersWithBids": "Papers With Bids",
+        "papersWithoutBids": "Papers Without Bids"
+      },
+      "legend": "Legend",
+      "noBid": "No Bid",
+      "searchPlaceholder": "Search papers by title or track...",
+      "table": {
+        "paper": "Paper"
+      },
+      "tooltip": {
+        "yes": "YES",
+        "maybe": "MAYBE",
+        "no": "NO",
+        "coi": "COI"
+      },
+      "reviewerStats": {
+        "title": "Reviewer Statistics",
+        "subtitle": "Summary of bids by reviewer",
+        "bidsCount": "{count} bids",
+        "yes": "Yes",
+        "maybe": "Maybe",
+        "no": "No",
+        "coi": "COI"
+      },
+      "empty": {
+        "title": "No papers found",
+        "adjustSearch": "Try adjusting your search query",
+        "noPapers": "No papers have been submitted yet"
+      }
+    }
+  },
+  "cameraReady": {
+    "title": "Camera Ready",
+    "subtitle": "Submit final versions of your accepted papers",
+    "stats": {
+      "accepted": "Accepted Papers",
+      "approved": "Approved",
+      "needsRevision": "Needs Revision",
+      "uploadPending": "Upload Pending"
+    },
+    "status": {
+      "pending": "Upload Required",
+      "approved": "Approved",
+      "needsRevision": "Needs Revision",
+      "underReview": "Under Review"
+    },
+    "reviewerComment": "Reviewer Comment",
+    "uploaded": "Uploaded:",
+    "actions": {
+      "uploadRevised": "Upload Revised Version",
+      "upload": "Upload Camera Ready"
+    },
+    "approved": "Camera ready approved!",
+    "underReview": "Under review by the committee",
+    "empty": {
+      "title": "No accepted papers",
+      "description": "You don't have any accepted papers that require camera-ready submission"
+    }
+  },
+  "paperSubmit": {
+    "title": "Submit New Paper",
+    "subtitle": "Follow the steps to submit your paper",
+    "steps": {
+      "conference": { "title": "Conference", "description": "Select conference" },
+      "track": { "title": "Track", "description": "Choose track" },
+      "metadata": { "title": "Metadata", "description": "Paper details" },
+      "authors": { "title": "Authors", "description": "Add co-authors" },
+      "upload": { "title": "Upload", "description": "Submit file" }
+    },
+    "conference": {
+      "title": "Select Conference",
+      "description": "Choose the conference you want to submit your paper to",
+      "empty": "No conferences available for submission",
+      "noDescription": "No description"
+    },
+    "track": {
+      "title": "Select Track (Optional)",
+      "description": "Choose the track that best fits your paper topic",
+      "empty": "No tracks found for this conference",
+      "emptyHint": "You can proceed without selecting a track",
+      "general": "General Submission",
+      "generalDesc": "Submit without a specific track",
+      "noDescription": "No description",
+      "papers": "papers"
+    },
+    "metadata": {
+      "title": "Paper Details",
+      "description": "Enter your paper title, abstract, and keywords",
+      "titleLabel": "Title *",
+      "titlePlaceholder": "Enter your paper title",
+      "abstractLabel": "Abstract *",
+      "abstractPlaceholder": "Enter your paper abstract",
+      "characters": "characters",
+      "keywordsLabel": "Keywords (up to 10)",
+      "keywordPlaceholder": "Add a keyword"
+    },
+    "authors": {
+      "title": "Authors",
+      "description": "Add co-authors to your paper. You are automatically added as the primary author.",
+      "authorLabel": "Author {number}",
+      "primary": "Primary",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "addCoAuthor": "Add Co-Author"
+    },
+    "upload": {
+      "title": "Upload Paper",
+      "description": "Upload your paper in PDF format (max 50MB)",
+      "dropzone": "Drag and drop your PDF here",
+      "browse": "or click to browse",
+      "remove": "Remove",
+      "uploading": "Uploading...",
+      "summary": "Submission Summary",
+      "conference": "Conference",
+      "track": "Track",
+      "paperTitle": "Title",
+      "authorsCount": "Authors",
+      "keywordsCount": "Keywords"
+    },
+    "actions": {
+      "back": "Back",
+      "next": "Next",
+      "submit": "Submit Paper",
+      "submitting": "Submitting..."
+    },
+    "success": {
+      "title": "Paper Submitted Successfully!",
+      "redirect": "Redirecting to your paper..."
+    },
+    "errors": {
+      "loadConferences": "Failed to load conferences",
+      "loadTracks": "Failed to load tracks",
+      "pdfOnly": "Only PDF files are allowed",
+      "fileSize": "File size must be less than 50MB",
+      "requiredFields": "Please fill in all required fields",
+      "submitFailed": "Failed to submit paper"
+    }
+  },
+  "assignments": {
+    "title": "Assignment Dashboard",
+    "subtitle": "Manage reviewer assignments for all papers",
+    "refresh": "Refresh",
+    "autoAssign": "Auto Assign",
+    "autoAssigning": "Auto assigning...",
+    "stats": {
+      "totalPapers": "Total Papers",
+      "withAssignments": "With Assignments",
+      "missingAssignments": "Missing Assignments",
+      "avgPerPaper": "Avg. Reviewers/Paper"
+    },
+    "reviewerLoad": {
+      "title": "Reviewer Load Distribution",
+      "subtitle": "Papers assigned per reviewer"
+    },
+    "searchPlaceholder": "Search papers...",
+    "table": {
+      "title": "Papers and Assignments",
+      "subtitle": "All papers and their assigned reviewers",
+      "paper": "Paper",
+      "reviewers": "Reviewers",
+      "assigned": "Assigned",
+      "actions": "Actions",
+      "noReviewers": "No reviewers",
+      "view": "View"
+    },
+    "empty": {
+      "title": "No papers found",
+      "adjustSearch": "Try adjusting your search criteria",
+      "noPapers": "No papers in this conference"
+    },
+    "toast": {
+      "loadFailed": "Failed to load assignment statistics.",
+      "loadFailedDesc": "Please try again or refresh the page.",
+      "autoAssignSuccess": "Auto assignment completed",
+      "autoAssignSuccessDesc": "{count} assignments created.",
+      "autoAssignFailed": "Auto assignment failed"
+    }
+  },
+  "proceedings": {
+    "title": "Proceedings",
+    "back": "Back",
+    "error": {
+      "title": "Failed to Load Proceedings",
+      "retry": "Retry"
+    },
+    "empty": {
+      "title": "No proceedings yet",
+      "description": "The proceedings will be available once papers have been accepted and their camera-ready versions approved.",
+      "noPapers": "No accepted papers yet",
+      "noPapersDesc": "There are no accepted papers with approved camera-ready versions in this conference."
+    }
+  }
+}
+

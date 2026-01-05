@@ -1,0 +1,1036 @@
+{
+  "common": {
+    "brand": "CMT",
+    "brandFull": "Konferans Yönetim Aracı",
+    "actions": {
+      "signIn": "Giriş Yap",
+      "getStarted": "Başla",
+      "refresh": "Yenile",
+      "view": "Görüntüle",
+      "close": "Kapat",
+      "save": "Kaydet",
+      "cancel": "İptal",
+      "submit": "Gönder",
+      "continue": "Devam Et",
+      "back": "Geri",
+      "editSettings": "Ayarları Düzenle"
+    },
+    "status": {
+      "loading": "Yükleniyor...",
+      "online": "Çevrimiçi"
+    },
+    "roles": {
+      "admin": "Admin",
+      "chair": "Başkan",
+      "reviewer": "Hakem",
+      "author": "Yazar"
+    },
+    "errors": {
+      "error": "Hata"
+    }
+  },
+  "localeSwitcher": {
+    "label": "Dil"
+  },
+  "auth": {
+    "login": {
+      "title": "Tekrar Hoş Geldiniz",
+      "subtitle": "Hesabınıza erişmek için bilgilerinizi girin",
+      "fields": {
+        "email": "E-posta",
+        "password": "Şifre"
+      },
+      "placeholders": {
+        "email": "ornek@email.com",
+        "password": "Şifrenizi girin"
+      },
+      "signIn": "Giriş Yap",
+      "signingIn": "Giriş yapılıyor...",
+      "noAccount": "Hesabınız yok mu?",
+      "signUp": "Kayıt ol",
+      "success": "Başarılı",
+      "error": "Hata",
+      "registrationSuccess": "Hesap başarıyla oluşturuldu! Lütfen giriş yapın.",
+      "errors": {
+        "loginFailed": "Giriş başarısız"
+      }
+    },
+    "register": {
+      "title": "Hesap Oluştur",
+      "subtitle": "Başlamak için bilgilerinizi girin",
+      "fields": {
+        "firstName": "Ad",
+        "lastName": "Soyad",
+        "email": "E-posta",
+        "password": "Şifre",
+        "confirmPassword": "Şifre Tekrar"
+      },
+      "placeholders": {
+        "firstName": "Ahmet",
+        "lastName": "Yılmaz",
+        "email": "ornek@email.com",
+        "password": "Şifre oluşturun",
+        "confirmPassword": "Şifrenizi onaylayın"
+      },
+      "createAccount": "Hesap Oluştur",
+      "creating": "Hesap oluşturuluyor...",
+      "hasAccount": "Zaten hesabınız var mı?",
+      "signIn": "Giriş yap",
+      "error": "Hata",
+      "errors": {
+        "nameRequired": "Ad ve soyad gereklidir",
+        "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+        "passwordMismatch": "Şifreler eşleşmiyor",
+        "passwordLength": "Şifre en az 6 karakter olmalıdır",
+        "registrationFailed": "Kayıt başarısız"
+      }
+    }
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "subtitle": "Hesap tercihlerinizi yönetin",
+    "profile": {
+      "title": "Profil Bilgileri",
+      "description": "Kişisel bilgilerinizi güncelleyin",
+      "firstName": "Ad",
+      "firstNamePlaceholder": "Adınızı girin",
+      "lastName": "Soyad",
+      "lastNamePlaceholder": "Soyadınızı girin",
+      "email": "E-posta",
+      "emailPlaceholder": "E-postanızı girin",
+      "save": "Değişiklikleri Kaydet"
+    },
+    "password": {
+      "title": "Şifre Değiştir",
+      "description": "Şifrenizi güncelleyin",
+      "current": "Mevcut Şifre",
+      "currentPlaceholder": "Mevcut şifrenizi girin",
+      "new": "Yeni Şifre",
+      "newPlaceholder": "Yeni şifrenizi girin",
+      "confirm": "Yeni Şifre Tekrar",
+      "confirmPlaceholder": "Yeni şifrenizi onaylayın",
+      "update": "Şifreyi Güncelle"
+    },
+    "notifications": {
+      "title": "Bildirimler",
+      "description": "Bildirimleri nasıl alacağınızı ayarlayın",
+      "enabled": "Etkin",
+      "email": {
+        "label": "E-posta Bildirimleri",
+        "description": "Makaleleriniz ve değerlendirmeleriniz hakkında e-posta güncellemeleri alın"
+      },
+      "reviewReminders": {
+        "label": "Değerlendirme Hatırlatıcıları",
+        "description": "Yaklaşan değerlendirme son tarihleri hakkında hatırlatma alın"
+      },
+      "decisions": {
+        "label": "Karar Bildirimleri",
+        "description": "Makaleleriniz hakkında karar verildiğinde bildirim alın"
+      }
+    },
+    "appearance": {
+      "title": "Görünüm",
+      "description": "Görünümü özelleştirin",
+      "light": "Açık",
+      "dark": "Koyu",
+      "system": "Sistem"
+    },
+    "account": {
+      "title": "Hesap",
+      "description": "Hesap bilgileriniz",
+      "id": "Hesap ID",
+      "memberSince": "Üyelik Tarihi",
+      "type": "Hesap Türü",
+      "administrator": "Yönetici",
+      "standardUser": "Standart Kullanıcı"
+    },
+    "danger": {
+      "title": "Tehlikeli Bölge",
+      "description": "Geri alınamaz işlemler",
+      "deleteAccount": "Hesabı Sil"
+    }
+  },
+  "landing": {
+    "badge": "Optimize Konferans Yönetimi",
+    "heroTitleLine1": "Modern Konferans",
+    "heroTitleLine2": "Yönetim Sistemi",
+    "heroSubtitle": "Akademik konferanslar, makale gönderimleri, hakemlik süreçleri ve yayımlama akışlarını tek yerde yöneten güçlü bir platform.",
+    "heroPrimary": "Konferansını Başlat",
+    "heroSecondary": "Panele Giriş Yap",
+    "featuresTitle": "Başarılı bir konferans için ihtiyacın olan her şey",
+    "features": {
+      "submissionTitle": "Makale Gönderimi",
+      "submissionDesc": "Birden çok dosya formatı ve ortak yazar desteğiyle kolay gönderim.",
+      "assignmentTitle": "Hakem Ataması",
+      "assignmentDesc": "Oylama sistemi ve çatışma kontrolüyle akıllı atama.",
+      "reviewsTitle": "Değerlendirme Yönetimi",
+      "reviewsDesc": "Puanlama ve öneriler içeren kapsamlı formlar.",
+      "deadlinesTitle": "Tarih Takibi",
+      "deadlinesDesc": "Bildirimlerle otomatik son tarih uygulaması."
+    },
+    "benefitsTitle": "Neden bu platform?",
+    "benefits": [
+      "Başkan, Hakem ve Yazar için rol bazlı erişim",
+      "Gerçek zamanlı istatistikler ve grafiklerle pano",
+      "Otomatik hakem-makale eşleştirme",
+      "Son baskı teslim süreci",
+      "Konforlu kullanım için karanlık mod",
+      "Mobil uyumlu tasarım"
+    ],
+    "ctaTitle": "Hazır mısın?",
+    "ctaSubtitle": "Platformumuza güvenen binlerce organizatöre katıl.",
+    "ctaButton": "Hesap Oluştur",
+    "footer": "© 2024 Konferans Yönetim Aracı. Tüm hakları saklıdır."
+  },
+  "topbar": {
+    "title": "Konferans Yönetimi",
+    "profile": "Profil",
+    "settings": "Ayarlar",
+    "logout": "Çıkış yap"
+  },
+  "sidebar": {
+    "main": "Ana",
+    "admin": "Yönetim",
+    "items": {
+      "dashboard": "Pano",
+      "conferences": "Konferanslar",
+      "myPapers": "Makalelerim",
+      "assignments": "Atamalar",
+      "bidding": "Oylama",
+      "cameraReady": "Son Baskı",
+      "adminPanel": "Yönetim Paneli",
+      "allPapers": "Tüm Makaleler",
+      "users": "Kullanıcılar",
+      "settings": "Ayarlar"
+    }
+  },
+  "layout": {
+    "theme": {
+      "toggle": "Temayı değiştir",
+      "light": "Açık",
+      "dark": "Koyu",
+      "system": "Sistem"
+    }
+  },
+  "conferences": {
+    "list": {
+      "title": "Konferanslar",
+      "subtitle": "Akademik konferansları görüntüle ve yönet",
+      "create": "Konferans Oluştur",
+      "errors": {
+        "load": "Konferanslar yüklenemedi"
+      },
+      "status": {
+        "upcoming": "Yaklaşan",
+        "active": "Aktif",
+        "completed": "Tamamlandı"
+      },
+      "sections": {
+        "active": "Aktif Konferanslar",
+        "upcoming": "Yaklaşan Konferanslar",
+        "completed": "Geçmiş Konferanslar"
+      },
+      "empty": {
+        "title": "Henüz konferans yok",
+        "admin": "Makale gönderimi ve değerlendirmeye başlamak için ilk konferansını oluştur.",
+        "user": "Şu anda uygun konferans yok. Daha sonra tekrar kontrol et."
+      },
+      "stats": {
+        "total": "Toplam Konferans"
+      }
+    },
+    "create": {
+      "title": "Konferans Oluştur",
+      "subtitle": "Makale gönderimleri ve değerlendirmeler için yeni bir konferans oluşturun",
+      "error": "Hata",
+      "details": {
+        "title": "Konferans Detayları",
+        "description": "Konferansınız için temel bilgileri girin"
+      },
+      "fields": {
+        "name": "Konferans Adı",
+        "description": "Açıklama",
+        "location": "Konum",
+        "startDate": "Başlangıç Tarihi",
+        "endDate": "Bitiş Tarihi"
+      },
+      "placeholders": {
+        "name": "Örn: ICML 2024",
+        "description": "Konferansı, ilgi alanlarını vb. tanımlayın",
+        "location": "Örn: İstanbul veya Çevrimiçi"
+      },
+      "createButton": "Konferans Oluştur",
+      "creating": "Oluşturuluyor...",
+      "errors": {
+        "nameRequired": "Konferans adı gereklidir",
+        "datesRequired": "Başlangıç ve bitiş tarihi gereklidir",
+        "endBeforeStart": "Bitiş tarihi başlangıç tarihinden sonra olmalıdır",
+        "createFailed": "Konferans oluşturulamadı"
+      }
+    },
+    "details": {
+      "back": "Konferanslara Dön",
+      "noDescription": "Açıklama eklenmemiş",
+      "errors": {
+        "load": "Konferans yüklenemedi",
+        "notFound": "Konferans bulunamadı"
+      },
+      "status": {
+        "upcoming": "Yaklaşan",
+        "active": "Aktif",
+        "completed": "Tamamlandı",
+        "unknown": "Bilinmiyor"
+      },
+      "sections": {
+        "generalInfo": "Genel Bilgiler",
+        "deadlines": "Son Tarihler",
+        "deadlinesDesc": "Gönderimler ve değerlendirmeler için önemli tarihler",
+        "configuration": "Yapılandırma",
+        "statistics": "İstatistikler",
+        "management": "Yönetim Paneli",
+        "managementDesc": "Yönetimsel işlemler",
+        "quickActions": "Hızlı İşlemler"
+      },
+      "fields": {
+        "startDate": "Başlangıç Tarihi",
+        "endDate": "Bitiş Tarihi",
+        "location": "Konum",
+        "created": "Oluşturulma",
+        "submissionDeadline": "Gönderim Son Tarihi",
+        "reviewDeadline": "Değerlendirme Son Tarihi",
+        "maxReviewersPerPaper": "Makale Başına Maks. Hakem",
+        "assignmentTimeout": "Atama Zaman Aşımı",
+        "assignmentTimeoutValue": "{days} gün",
+        "totalPapers": "Toplam Makale",
+        "members": "Üyeler"
+      },
+      "actions": {
+        "editSettings": "Ayarları Düzenle",
+        "manageMembers": "Üyeleri Yönet",
+        "viewPapers": "Makaleleri Gör",
+        "viewAssignments": "Atamaları Gör"
+      }
+    },
+    "card": {
+      "status": {
+        "upcoming": "Yaklaşan",
+        "active": "Aktif",
+        "completed": "Tamamlandı"
+      },
+      "roles": {
+        "admin": "Admin",
+        "chair": "Başkan",
+        "reviewer": "Hakem",
+        "author": "Yazar"
+      },
+      "noDescription": "Açıklama eklenmemiş",
+      "submissionDeadline": "Gönderim Son Tarihi",
+      "reviewDeadline": "Değerlendirme Son Tarihi",
+      "papersCount": "{count} {count, plural, one {makale} other {makale}}",
+      "viewDetails": "Detayları Gör"
+    },
+    "members": {
+      "page": {
+        "notFound": "Konferans bulunamadı",
+        "back": "Konferanslara dön",
+        "title": "Üyeler",
+        "actions": {
+          "add": "Üye Ekle"
+        },
+        "countLabel": "Üye",
+        "list": {
+          "title": "Konferans Üyeleri",
+          "manage": "Bu konferanstaki üyeleri ve rollerini yönetin",
+          "view": "Konferansın tüm üyelerini görüntüleyin"
+        }
+      },
+      "section": {
+        "title": "Üyeler ({count})",
+        "description": "Konferans katılımcıları ve roller",
+        "actions": {
+          "add": "Ekle",
+          "viewAll": "Tümünü Gör",
+          "addFirst": "İlk üyeyi ekle",
+          "viewCount": "{count} üyeyi gör →"
+        },
+        "empty": "Henüz üye yok"
+      },
+      "actions": {
+        "remove": "Üyeyi Kaldır"
+      },
+      "list": {
+        "filters": {
+          "all": "Tümü",
+          "chairs": "Başkanlar",
+          "reviewers": "Hakemler",
+          "authors": "Yazarlar"
+        },
+        "searchPlaceholder": "Üyelerde ara...",
+        "empty": {
+          "title": "Üye bulunamadı",
+          "search": "Arama veya filtreyi değiştirerek deneyin",
+          "default": "Henüz üye eklenmemiş"
+        }
+      },
+      "role": {
+        "chair": "Başkan",
+        "reviewer": "Hakem",
+        "author": "Yazar"
+      },
+      "badges": {
+        "admin": "Admin"
+      },
+      "addModal": {
+        "title": "Üye Ekle",
+        "description": "Bu konferansa e-posta adresiyle bir kullanıcı ekleyin.",
+        "email": {
+          "label": "E-posta Adresi",
+          "placeholder": "kullanici@ornek.com"
+        },
+        "role": {
+          "label": "Rol",
+          "placeholder": "Rol seçin",
+          "options": {
+            "chair": "Başkan",
+            "reviewer": "Hakem",
+            "author": "Yazar"
+          },
+          "hints": {
+            "chair": "Üyeleri, makaleleri ve değerlendirmeleri yönetebilir",
+            "reviewer": "Atanan makaleleri değerlendirebilir",
+            "author": "Makale gönderebilir"
+          }
+        },
+        "actions": {
+          "cancel": "İptal",
+          "loading": "Ekleniyor...",
+          "submit": "Üye Ekle"
+        }
+      },
+      "remove": {
+        "title": "Üyeyi Kaldır",
+        "description": "Bu konferanstan <strong>{name}</strong> üyesini kaldırmak istediğine emin misin? Bu işlem geri alınamaz.",
+        "fallbackName": "bu üye",
+        "actions": {
+          "cancel": "İptal",
+          "confirm": "Kaldır",
+          "loading": "Kaldırılıyor..."
+        }
+      },
+      "toast": {
+        "loadError": { "title": "Hata", "description": "Konferans verileri yüklenemedi" },
+        "addSuccess": { "title": "Başarılı", "description": "Üye başarıyla eklendi" },
+        "addError": { "title": "Hata", "fallback": "Üye eklenemedi" },
+        "roleSuccess": { "title": "Başarılı", "description": "Rol başarıyla güncellendi" },
+        "roleError": { "title": "Hata", "fallback": "Rol güncellenemedi" },
+        "removeSuccess": { "title": "Başarılı", "description": "Üye başarıyla kaldırıldı" },
+        "removeError": { "title": "Hata", "fallback": "Üye kaldırılamadı" }
+      }
+    },
+    "settings": {
+      "generalInfo": {
+        "title": "Genel Bilgiler",
+        "description": "Konferansınızın temel bilgileri",
+        "fields": {
+          "name": { "label": "Konferans Adı *", "placeholder": "Konferans adını girin" },
+          "description": { "label": "Açıklama", "placeholder": "Konferans açıklamasını girin" },
+          "location": { "label": "Konum", "placeholder": "Örn: İstanbul veya Çevrimiçi" },
+          "startDate": { "label": "Başlangıç Tarihi *" },
+          "endDate": { "label": "Bitiş Tarihi *" }
+        }
+      },
+      "deadlines": {
+        "title": "Son Tarihler",
+        "subtitle": "Makale gönderimi ve değerlendirme için önemli son tarihleri ayarla",
+        "status": {
+          "passed": "Geçti",
+          "left": "{count}g kaldı"
+        },
+        "fields": {
+          "submission": {
+            "label": "Gönderim Son Tarihi",
+            "help": "Bu tarihten sonra yazarlar yeni makale gönderemez"
+          },
+          "review": {
+            "label": "Değerlendirme Son Tarihi",
+            "help": "Hakemler değerlendirmelerini bu tarihe kadar tamamlamalı"
+          }
+        }
+      },
+      "review": {
+        "title": "Değerlendirme Ayarları",
+        "subtitle": "Değerlendirme atama parametrelerini yapılandır",
+        "fields": {
+          "maxReviewers": {
+            "label": "Maksimum Hakem (Makale başına)",
+            "help": "Bir makaleye atanabilecek en fazla hakem sayısı. Önerilen: 2-4 hakem."
+          },
+          "timeout": {
+            "label": "Atama Zaman Aşımı (Gün)",
+            "help": "Hakemlerin bir atamayı kabul/ret için sahip olduğu süre. Bu sürenin sonunda atama otomatik olarak sonlanır."
+          }
+        },
+        "summary": {
+          "title": "Güncel Yapılandırma",
+          "reviewersPerPaper": "Makale başına hakem",
+          "timeout": "Atama zaman aşımı",
+          "timeoutValue": "{days} gün"
+        }
+      },
+      "page": {
+        "errors": {
+          "load": "Konferans yüklenemedi",
+          "save": "Ayarlar kaydedilemedi"
+        },
+        "changes": {
+          "name": "Konferans adı",
+          "description": "Açıklama",
+          "location": "Konum",
+          "startDate": "Başlangıç tarihi",
+          "endDate": "Bitiş tarihi",
+          "submissionDeadline": "Gönderim son tarihi",
+          "reviewDeadline": "Değerlendirme son tarihi",
+          "maxReviewers": "Makale başına hakem sayısı",
+          "assignmentTimeout": "Atama zaman aşımı"
+        },
+        "back": "Konferanslara dön",
+        "title": "Konferans Ayarları",
+        "fallbackName": "Konferans",
+        "viewOnly": "Sadece Görüntüle",
+        "viewOnlyTitle": "Görüntüleme Modu",
+        "viewOnlyDesc": "Bu ayarları düzenleme iznin yok. Yalnızca konferans başkanları ve yöneticiler değişiklik yapabilir.",
+        "actions": {
+          "dismiss": "Kapat",
+          "cancel": "İptal"
+        },
+        "success": {
+          "title": "Başarılı",
+          "message": "Ayarlar başarıyla kaydedildi!"
+        },
+        "saveBar": {
+          "label": "Kaydedilmemiş değişiklikler",
+          "help": "Kaydedilmemiş değişikliklerin var. Uygulamak için kaydet.",
+          "reset": "Sıfırla",
+          "save": "Değişiklikleri Kaydet",
+          "saving": "Kaydediliyor..."
+        },
+        "confirm": {
+          "title": "Değişiklikleri Onayla",
+          "description": "Aşağıdaki değişiklikleri kaydetmek istediğine emin misin?",
+          "warning": "Konferans ayarları değişiklikleri devam eden gönderim ve değerlendirmeleri etkileyebilir.",
+          "changesTitle": "Uygulanacak değişiklikler:",
+          "save": "Değişiklikleri Kaydet",
+          "saving": "Kaydediliyor..."
+        }
+      }
+    }
+  },
+  "papers": {
+    "header": {
+      "myPapers": "Makalelerim",
+      "allPapers": "Tüm Makaleler",
+      "subtitle": {
+        "mine": "Kendi makale gönderimlerini görüntüle ve yönet",
+        "all": "Tüm makale gönderimlerini görüntüle ve yönet"
+      }
+    },
+    "actions": {
+      "refresh": "Yenile",
+      "submit": "Makale Gönder"
+    },
+    "errors": {
+      "title": "Hata",
+      "load": "Makaleler yüklenemedi. Makale listeleme servisi kullanılamıyor olabilir."
+    },
+    "stats": {
+      "total": "Toplam Makale",
+      "submitted": "Gönderilen",
+      "underReview": "İncelemede",
+      "accepted": "Kabul",
+      "rejected": "Reddedildi"
+    },
+    "filters": {
+      "searchPlaceholder": "Başlığa göre makale ara...",
+      "status": {
+        "placeholder": "Duruma göre filtrele",
+        "all": "Tüm Durumlar",
+        "submitted": "Gönderilen",
+        "under_review": "İncelemede",
+        "accepted": "Kabul",
+        "rejected": "Reddedildi",
+        "revision": "Revizyon"
+      },
+      "keyword": {
+        "placeholder": "Anahtara göre filtrele",
+        "all": "Tüm Anahtarlar"
+      },
+      "clear": "Temizle"
+    },
+    "empty": {
+      "title": "Makale bulunamadı",
+      "noFilters": "Aradığını bulmak için filtrelerini değiştir.",
+      "noPapers": "Henüz makale göndermedin. İlk makaleni göndererek başla.",
+      "clearFilters": "Filtreleri Temizle"
+    },
+    "viewButton": "Görüntüle",
+    "abstractMissing": "Özet eklenmemiş",
+    "submittedAt": "Gönderim: {date}",
+    "keywords": {
+      "more": "+{count} fazla"
+    },
+    "pagination": {
+      "previous": "Önceki",
+      "next": "Sonraki",
+      "showing": "{from} - {to} / {total} makale",
+      "summary": "{total} makalenin {count} tanesi gösteriliyor"
+    }
+  },
+  "dashboard": {
+    "welcome": "Tekrar hoş geldin, {name}!",
+    "selectConference": "Pano istatistiklerini görmek için bir konferans seç",
+    "viewingConference": "{name} için istatistikleri görüntülüyorsun",
+    "error": "Hata",
+    "errorDismiss": "Kapat",
+    "emptyTitle": "Hiç konferans yok",
+    "emptyAdmin": "Pano ile çalışmaya başlamak için ilk konferansını oluştur.",
+    "emptyUser": "Henüz herhangi bir konferansa atanmadın. Bir yöneticiyle iletişime geçip eklenmeyi iste.",
+    "createConference": "Konferans Oluştur",
+    "quickActions": "Hızlı İşlemler",
+    "quickActionsDesc": "Konferans yönetiminde sık kullanılan görevler",
+    "qaManagePapers": "Makaleleri Yönet",
+    "qaManagePapersDesc": "Başvuruları incele ve yönet",
+    "qaSettings": "Konferans Ayarları",
+    "qaSettingsDesc": "Son teslim tarihlerini ve hakemleri düzenle",
+    "qaDecisions": "Karar Ver",
+    "qaDecisionsDesc": "Makaleleri kabul et veya reddet",
+    "yourConferences": "Konferansların",
+    "yourConferencesDesc": "Erişimin olan tüm konferanslar",
+    "selected": "Seçili",
+    "statusActive": "Aktif",
+    "stats": {
+      "selectConference": "Bir konferans seç",
+      "papers": {
+        "total": { "title": "Toplam Makale", "desc": "Gönderilen tüm makaleler" },
+        "submitted": { "title": "Gönderilen", "desc": "İnceleme bekliyor" },
+        "accepted": { "title": "Kabul", "desc": "Kabul edilen makaleler" },
+        "rejected": { "title": "Reddedildi", "desc": "Reddedilen makaleler" },
+        "cameraReady": { "title": "Son Baskı", "desc": "Yayına hazır" }
+      },
+      "reviews": {
+        "total": { "title": "Toplam Değerlendirme", "desc": "Tamamlanan değerlendirmeler" },
+        "averageScore": { "title": "Ortalama Puan", "desc": "10 üzerinden" },
+        "averageConfidence": { "title": "Ortalama Güven", "desc": "5 üzerinden" }
+      }
+    },
+    "bidding": {
+      "title": "Oy Özetin",
+      "description": "Hakemlik için oy verdiğin makaleler",
+      "badge": "{count} oy",
+      "progress": {
+        "title": "Oylama Durumu",
+        "count": "{total} makalenin {completed} tanesi",
+        "remaining": "{count} kaldı"
+      },
+      "labels": {
+        "yes": "Evet",
+        "maybe": "Belki",
+        "no": "Hayır",
+        "conflict": "Çıkar Çatışması"
+      },
+      "allDone": "Tüm makalelere oy verildi!",
+      "missing": "{count} makale için oy vermen gerekiyor",
+      "continue": "Oylamaya Devam Et",
+      "empty": "Henüz oy verilmedi. Hakemlik tercihlerini göstermek için makalelere oy ver."
+    },
+    "charts": {
+      "papers": {
+        "selectConference": "Makale dağılımını görmek için bir konferans seç",
+        "title": "Makale Durum Dağılımı",
+        "subtitle": "Tüm gönderilen makalelere genel bakış",
+        "empty": "Henüz makale yok",
+        "categories": {
+          "submitted": "Gönderildi",
+          "accepted": "Kabul",
+          "rejected": "Reddedildi",
+          "cameraReady": "Son Baskı"
+        },
+        "valueFormatter": "{value} makale"
+      }
+    },
+    "reviewerLoad": {
+      "selectConference": "Hakem atamalarını görmek için bir konferans seç",
+      "title": "Hakem Atamaları",
+      "subtitle": "Hakem bazında ilerleme",
+      "subtitleCount": "Hakem bazında ilerleme ({count} hakem)",
+      "empty": "Henüz hakem atanmadı",
+      "table": {
+        "reviewer": "Hakem",
+        "progress": "İlerleme",
+        "assigned": "Atanan",
+        "completed": "Tamamlanan",
+        "status": "Durum",
+        "complete": "Tamamlandı",
+        "pending": "{count} bekliyor"
+      }
+    },
+    "reviewsChart": {
+      "selectConference": "Hakem iş yükünü görmek için bir konferans seç",
+      "title": "Hakem İş Yükü",
+      "subtitle": "Hakem başına atanan makale sayısı",
+      "subtitleDetailed": "Hakem başına atanan ve tamamlanan makaleler",
+      "empty": "Henüz hakem atanmadı",
+      "categories": {
+        "assigned": "Atanan",
+        "completed": "Tamamlanan"
+      }
+    },
+    "timeline": {
+      "selectConference": "Etkinlik zaman çizelgesini görmek için bir konferans seç",
+      "title": "Etkinlik Zaman Çizelgesi",
+      "subtitle": "Başvurular ve değerlendirmeler zaman içinde",
+      "empty": "Henüz etkinlik verisi yok",
+      "series": {
+        "submissions": "Gönderimler",
+        "reviews": "Değerlendirmeler"
+      }
+    }
+  },
+  "reviews": {
+    "title": "Değerlendirmelerim",
+    "subtitle": "Değerlendirmeniz için atanan makaleler",
+    "refresh": "Yenile",
+    "stats": {
+      "notStarted": {
+        "title": "Başlanmadı",
+        "desc": "Değerlendirmenizi bekliyor"
+      },
+      "inProgress": {
+        "title": "Devam Ediyor",
+        "desc": "Taslak değerlendirmeler"
+      },
+      "completed": {
+        "title": "Tamamlandı",
+        "desc": "Gönderilen değerlendirmeler"
+      },
+      "overdue": {
+        "title": "Gecikmiş",
+        "desc": "Son tarih geçti"
+      }
+    },
+    "filters": {
+      "searchPlaceholder": "Makale ara...",
+      "status": {
+        "placeholder": "Duruma göre filtrele",
+        "all": "Tüm Değerlendirmeler",
+        "notStarted": "Başlanmadı",
+        "draft": "Taslak",
+        "submitted": "Gönderildi"
+      }
+    },
+    "pending": {
+      "title": "Bekleyen Değerlendirmeler",
+      "description": "Değerlendirmenizi bekleyen makaleler"
+    },
+    "completed": {
+      "title": "Tamamlanan Değerlendirmeler",
+      "description": "Gönderdiğiniz değerlendirmeler"
+    },
+    "empty": {
+      "allCaughtUp": "Hepsi tamam!",
+      "noPending": "Bekleyen değerlendirmeniz yok",
+      "noCompleted": "Henüz tamamlanmış değerlendirme yok"
+    },
+    "status": {
+      "notStarted": "Başlanmadı",
+      "draft": "Taslak",
+      "submitted": "Gönderildi"
+    },
+    "actions": {
+      "continue": "Devam Et",
+      "review": "Değerlendir",
+      "view": "Görüntüle"
+    },
+    "deadline": {
+      "overdue": "Gecikmiş:",
+      "due": "Son Tarih:"
+    },
+    "form": {
+      "title": "Değerlendirme Formu",
+      "back": "Değerlendirmelere Dön",
+      "notFound": "Değerlendirme bulunamadı",
+      "notFoundDesc": "Bu değerlendirme kaldırılmış olabilir veya erişim izniniz yok.",
+      "submitted": "Gönderildi",
+      "overdue": "Gecikmiş",
+      "lastSaved": "Son kayıt:",
+      "submittedNotice": "Bu değerlendirme gönderildi ve düzenlenemez.",
+      "submittedOn": "{date} tarihinde gönderildi",
+      "evaluation": "Değerlendirme",
+      "summary": "Özet",
+      "summaryLabel": "Makale Özeti",
+      "summaryPlaceholder": "Makalenin ana katkılarını ve bulgularını kısaca özetleyin...",
+      "summaryHelp": "Makalenin ana noktalarını 2-3 paragrafta özetleyin",
+      "strengths": "Güçlü Yönler",
+      "strengthsLabel": "Makalenin Güçlü Yönleri",
+      "strengthsPlaceholder": "Makalenin güçlü yönlerini listeleyin...",
+      "strengthsHelp": "Bu makalenin güçlü noktaları nelerdir?",
+      "weaknesses": "Zayıf Yönler",
+      "weaknessesLabel": "Makalenin Zayıf Yönleri",
+      "weaknessesPlaceholder": "Makalenin zayıf yönlerini listeleyin...",
+      "weaknessesHelp": "Zayıf noktalar veya iyileştirme alanları nelerdir?",
+      "commentsToAuthor": "Yazarlara Yorumlar",
+      "commentsToAuthorLabel": "Yazarlara Yorumlar",
+      "commentsToAuthorPlaceholder": "Yazarlara yapıcı geri bildirim sağlayın...",
+      "commentsToAuthorHelp": "Bu yorumlar makale yazarları tarafından görülebilir",
+      "confidentialComments": "Gizli Yorumlar",
+      "confidentialLabel": "Program Başkanına Yorumlar",
+      "confidentialPlaceholder": "Program başkanı için gizli notlar...",
+      "confidentialHelp": "Bu yorumlar yalnızca program başkanı tarafından görülebilir, yazarlar göremez",
+      "unsavedChanges": "Kaydedilmemiş değişiklikler",
+      "saving": "Kaydediliyor...",
+      "saveDraft": "Taslak Kaydet",
+      "submitReview": "Değerlendirmeyi Gönder",
+      "errors": {
+        "missingScore": "Lütfen genel bir puan seçin.",
+        "missingConfidence": "Lütfen güven seviyenizi seçin.",
+        "missingSummary": "Lütfen değerlendirmenizin bir özetini yazın."
+      },
+      "toast": {
+        "draftSaved": "Taslak kaydedildi",
+        "draftSavedDesc": "Değerlendirme taslağınız kaydedildi.",
+        "saveFailed": "Kayıt başarısız",
+        "saveFailedDesc": "Taslağınız kaydedilemedi. Lütfen tekrar deneyin.",
+        "submitted": "Değerlendirme gönderildi",
+        "submittedDesc": "Değerlendirmeniz başarıyla gönderildi.",
+        "submitFailed": "Gönderim başarısız",
+        "submitFailedDesc": "Değerlendirmeniz gönderilemedi. Lütfen tekrar deneyin.",
+        "loadFailed": "Değerlendirme yüklenemedi",
+        "loadFailedDesc": "Lütfen daha sonra tekrar deneyin."
+      }
+    }
+  },
+  "bidding": {
+    "title": "Makale Oylaması",
+    "subtitle": "Değerlendirmek istediğiniz makalelere ilginizi belirtin",
+    "stats": {
+      "total": "Toplam Makale",
+      "bidded": "Oy Verilen",
+      "highInterest": "Yüksek İlgi",
+      "medium": "Orta",
+      "lowInterest": "Düşük İlgi"
+    },
+    "filters": {
+      "searchPlaceholder": "Başlık veya özete göre makale ara..."
+    },
+    "levels": {
+      "high": "Yüksek İlgi",
+      "medium": "Orta",
+      "low": "Düşük İlgi",
+      "noBid": "Oy Yok"
+    },
+    "empty": {
+      "title": "Makale bulunamadı",
+      "adjustSearch": "Arama sorgunuzu değiştirmeyi deneyin",
+      "noPapers": "Oylama için makale yok"
+    },
+    "matrix": {
+      "title": "Hakem Oy Matrisi",
+      "subtitle": "Makaleler için tüm hakem oylarının genel görünümü",
+      "refresh": "Yenile",
+      "stats": {
+        "totalPapers": "Toplam Makale",
+        "totalReviewers": "Toplam Hakem",
+        "papersWithBids": "Oyu Olan Makaleler",
+        "papersWithoutBids": "Oyu Olmayan Makaleler"
+      },
+      "legend": "Açıklama",
+      "noBid": "Oy Yok",
+      "searchPlaceholder": "Başlık veya track ile makale ara...",
+      "table": {
+        "paper": "Makale"
+      },
+      "tooltip": {
+        "yes": "EVET",
+        "maybe": "BELKİ",
+        "no": "HAYIR",
+        "coi": "ÇÇ"
+      },
+      "reviewerStats": {
+        "title": "Hakem İstatistikleri",
+        "subtitle": "Hakem bazında oy özeti",
+        "bidsCount": "{count} oy",
+        "yes": "Evet",
+        "maybe": "Belki",
+        "no": "Hayır",
+        "coi": "ÇÇ"
+      },
+      "empty": {
+        "title": "Makale bulunamadı",
+        "adjustSearch": "Arama sorgunuzu değiştirmeyi deneyin",
+        "noPapers": "Henüz makale gönderilmedi"
+      }
+    }
+  },
+  "cameraReady": {
+    "title": "Son Baskı",
+    "subtitle": "Kabul edilen makalelerinizin son hallerini gönderin",
+    "stats": {
+      "accepted": "Kabul Edilen Makaleler",
+      "approved": "Onaylanan",
+      "needsRevision": "Revizyon Gerekli",
+      "uploadPending": "Yükleme Bekliyor"
+    },
+    "status": {
+      "pending": "Yükleme Gerekli",
+      "approved": "Onaylandı",
+      "needsRevision": "Revizyon Gerekli",
+      "underReview": "İnceleniyor"
+    },
+    "reviewerComment": "Hakem Yorumu",
+    "uploaded": "Yüklendi:",
+    "actions": {
+      "uploadRevised": "Revize Sürümü Yükle",
+      "upload": "Son Baskı Yükle"
+    },
+    "approved": "Son baskı onaylandı!",
+    "underReview": "Komite tarafından inceleniyor",
+    "empty": {
+      "title": "Kabul edilmiş makale yok",
+      "description": "Son baskı gerektiren kabul edilmiş makaleniz yok"
+    }
+  },
+  "paperSubmit": {
+    "title": "Yeni Makale Gönder",
+    "subtitle": "Makalenizi göndermek için adımları takip edin",
+    "steps": {
+      "conference": { "title": "Konferans", "description": "Konferans seç" },
+      "track": { "title": "Track", "description": "Track seç" },
+      "metadata": { "title": "Bilgiler", "description": "Makale detayları" },
+      "authors": { "title": "Yazarlar", "description": "Ortak yazarlar" },
+      "upload": { "title": "Yükle", "description": "Dosya gönder" }
+    },
+    "conference": {
+      "title": "Konferans Seç",
+      "description": "Makalenizi göndermek istediğiniz konferansı seçin",
+      "empty": "Gönderim için konferans yok",
+      "noDescription": "Açıklama yok"
+    },
+    "track": {
+      "title": "Track Seç (İsteğe Bağlı)",
+      "description": "Makale konunuza en uygun track'i seçin",
+      "empty": "Bu konferans için track bulunamadı",
+      "emptyHint": "Track seçmeden devam edebilirsiniz",
+      "general": "Genel Gönderim",
+      "generalDesc": "Belirli bir track seçmeden gönder",
+      "noDescription": "Açıklama yok",
+      "papers": "makale"
+    },
+    "metadata": {
+      "title": "Makale Detayları",
+      "description": "Makale başlığı, özet ve anahtar kelimeleri girin",
+      "titleLabel": "Başlık *",
+      "titlePlaceholder": "Makale başlığını girin",
+      "abstractLabel": "Özet *",
+      "abstractPlaceholder": "Makale özetini girin",
+      "characters": "karakter",
+      "keywordsLabel": "Anahtar Kelimeler (en fazla 10)",
+      "keywordPlaceholder": "Anahtar kelime ekle"
+    },
+    "authors": {
+      "title": "Yazarlar",
+      "description": "Makalenize ortak yazarlar ekleyin. Siz otomatik olarak birincil yazar olarak eklenirsiniz.",
+      "authorLabel": "Yazar {number}",
+      "primary": "Birincil",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "email": "E-posta",
+      "addCoAuthor": "Ortak Yazar Ekle"
+    },
+    "upload": {
+      "title": "Makale Yükle",
+      "description": "Makalenizi PDF formatında yükleyin (maks. 50MB)",
+      "dropzone": "PDF dosyanızı buraya sürükleyin",
+      "browse": "veya göz atmak için tıklayın",
+      "remove": "Kaldır",
+      "uploading": "Yükleniyor...",
+      "summary": "Gönderim Özeti",
+      "conference": "Konferans",
+      "track": "Track",
+      "paperTitle": "Başlık",
+      "authorsCount": "Yazarlar",
+      "keywordsCount": "Anahtar Kelimeler"
+    },
+    "actions": {
+      "back": "Geri",
+      "next": "İleri",
+      "submit": "Makaleyi Gönder",
+      "submitting": "Gönderiliyor..."
+    },
+    "success": {
+      "title": "Makale Başarıyla Gönderildi!",
+      "redirect": "Makalenize yönlendiriliyorsunuz..."
+    },
+    "errors": {
+      "loadConferences": "Konferanslar yüklenemedi",
+      "loadTracks": "Track'ler yüklenemedi",
+      "pdfOnly": "Yalnızca PDF dosyaları kabul edilir",
+      "fileSize": "Dosya boyutu 50MB'dan küçük olmalıdır",
+      "requiredFields": "Lütfen tüm gerekli alanları doldurun",
+      "submitFailed": "Makale gönderilemedi"
+    }
+  },
+  "assignments": {
+    "title": "Atama Panosu",
+    "subtitle": "Tüm makaleler için hakem atamalarını yönetin",
+    "refresh": "Yenile",
+    "autoAssign": "Otomatik Atama Yap",
+    "autoAssigning": "Otomatik atama yapılıyor...",
+    "stats": {
+      "totalPapers": "Toplam Makale",
+      "withAssignments": "Ataması Olan",
+      "missingAssignments": "Eksik Atamalar",
+      "avgPerPaper": "Ort. Hakem/Makale"
+    },
+    "reviewerLoad": {
+      "title": "Hakem Yük Dağılımı",
+      "subtitle": "Hakem başına atanan makale sayısı"
+    },
+    "searchPlaceholder": "Makale ara...",
+    "table": {
+      "title": "Makaleler ve Atamalar",
+      "subtitle": "Tüm makaleler ve atanan hakemleri",
+      "paper": "Makale",
+      "reviewers": "Hakemler",
+      "assigned": "Atanan",
+      "actions": "İşlemler",
+      "noReviewers": "Hakem yok",
+      "view": "Görüntüle"
+    },
+    "empty": {
+      "title": "Makale bulunamadı",
+      "adjustSearch": "Arama kriterini değiştir",
+      "noPapers": "Bu konferansta makale yok"
+    },
+    "toast": {
+      "loadFailed": "Atama istatistikleri yüklenemedi.",
+      "loadFailedDesc": "Lütfen tekrar deneyin veya sayfayı yenileyin.",
+      "autoAssignSuccess": "Otomatik atama tamamlandı",
+      "autoAssignSuccessDesc": "{count} atama oluşturuldu.",
+      "autoAssignFailed": "Otomatik atama başarısız"
+    }
+  },
+  "proceedings": {
+    "title": "Bildiri Kitapçığı",
+    "back": "Geri",
+    "error": {
+      "title": "Bildiri Kitapçığı Yüklenemedi",
+      "retry": "Tekrar Dene"
+    },
+    "empty": {
+      "title": "Henüz bildiri kitapçığı yok",
+      "description": "Bildiri kitapçığı, makaleler kabul edilip son baskıları onaylandığında kullanılabilir olacaktır.",
+      "noPapers": "Henüz kabul edilmiş makale yok",
+      "noPapersDesc": "Bu konferansta henüz son baskısı onaylanmış kabul edilmiş makale bulunmuyor."
+    }
+  }
+}
+
